@@ -34,3 +34,16 @@
 //   return lastwordCount;
 // };
 // console.log(lengthOfLastWord(s));
+//Problem Number 414. Third Maximum Number
+//https://leetcode.com/problems/third-maximum-number/
+const nums = [1, 2, 2, 5, 3, 5];
+const thirdMax = (nums) => {
+    const unique = Array.from(new Set(nums));
+    if (unique.length < 3) {
+        return Math.max(...unique);
+    }
+    console.log(unique);
+    const sorted = unique.sort((a, b) => b - a);
+    return sorted[2];
+};
+console.log(thirdMax(nums));
