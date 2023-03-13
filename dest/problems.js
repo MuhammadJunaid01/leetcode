@@ -36,14 +36,56 @@
 // console.log(lengthOfLastWord(s));
 //Problem Number 414. Third Maximum Number
 //https://leetcode.com/problems/third-maximum-number/
-const nums = [1, 2, 2, 5, 3, 5];
-const thirdMax = (nums) => {
-    const unique = Array.from(new Set(nums));
-    if (unique.length < 3) {
-        return Math.max(...unique);
-    }
-    console.log(unique);
-    const sorted = unique.sort((a, b) => b - a);
-    return sorted[2];
+// const nums = [1, 2, 2, 5, 3, 5];
+// const thirdMax = (nums: Array<number>) => {
+//   const unique = Array.from(new Set(nums));
+//   if (unique.length < 3) {
+//     return Math.max(...unique);
+//   }
+//   console.log(unique);
+//   const sorted = unique.sort((a, b) => b - a);
+//   return sorted[2];
+// };
+// console.log(thirdMax(nums))
+// problem number 136. Single Number
+//problem link  https://leetcode.com/problems/single-number/
+// const singleNumber = (nums: Array<number>) => {
+//   const unique = nums.filter((num) => {
+//     return nums.indexOf(num) === nums.lastIndexOf(num);
+//   });
+//   return unique.join("");
+// };
+// const nums = [4, 22, 22, 5, 5, 1, 2, 1, 2];
+// console.log(singleNumber(nums));
+//failed
+// PROBLEM NUMBER 599. Minimum Index Sum of Two Lists
+//https://leetcode.com/problems/minimum-index-sum-of-two-lists/
+// const list1 = ["happy", "sad", "good"];
+// const list2 = ["sad", "happy", "good"];
+// const findRestaurant = (list1: Array<string>, list2: Array<string>) => {
+//   const newarr = [...list1, ...list2];
+//   const commonStr = newarr.filter((num) => {
+//     return newarr.indexOf(num) !== newarr.lastIndexOf(num);
+//   });
+//   const res = Array.from(new Set(commonStr));
+//   // console.log(res, commonStr);
+//   // if (list1.sort((a, b) => a - b) === list2.sort((a, b) => a - b)) {
+//   //   console.log("jhbwhbfcwhb");
+//   // }
+//   if (res.length <= 3) {
+//     const out = res.slice(0, 1);
+//     return res;
+//   } else {
+//     return res;
+//   }
+// };
+// console.log(findRestaurant(list1, list2));
+//Problem number 459. Repeated Substring Pattern
+//https://leetcode.com/problems/repeated-substring-pattern/
+const s = "abab";
+const repeatedSubstringPattern = (s) => {
+    const str = s.split("");
+    console.log(str);
+    conbst;
 };
-console.log(thirdMax(nums));
+console.log(repeatedSubstringPattern(s));
